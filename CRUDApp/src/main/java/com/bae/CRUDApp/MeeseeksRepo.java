@@ -1,4 +1,5 @@
-package com.bae.crudapp;
+package com.bae.CRUDApp;
+
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

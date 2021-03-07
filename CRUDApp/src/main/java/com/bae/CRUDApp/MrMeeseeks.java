@@ -1,4 +1,5 @@
-package com.bae.crudapp;
+package com.bae.CRUDApp;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
