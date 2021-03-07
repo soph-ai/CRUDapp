@@ -9,9 +9,8 @@ import javax.persistence.Id;
 public class MrMeeseeks {
 	
 	private String name;
-	private String hair;
 	private String purpose;
-	private int age;
+	private String dateActivated;
 	
 	//set id as primary key (auto-incremented)
 	@Id 
@@ -24,12 +23,11 @@ public class MrMeeseeks {
 	}
 	
 	//constructor 
-	public MrMeeseeks(String name, String hair, String purpose, int age) {
+	public MrMeeseeks(String name, String purpose, String dateActivated) {
 		super();
 		this.name = name; 
-		this.hair = hair;
-		this.hair = hair;
-		this.age = age;
+		this.purpose = purpose;
+		this.dateActivated = dateActivated;
 	}
 
 	//getters and setters 
@@ -41,14 +39,6 @@ public class MrMeeseeks {
 		this.name = name;
 	}
 
-	public String getHair() {
-		return hair;
-	}
-
-	public void setHair(String hair) {
-		this.hair = hair;
-	}
-
 	public String getPurpose() {
 		return purpose;
 	}
@@ -57,12 +47,12 @@ public class MrMeeseeks {
 		this.purpose = purpose;
 	}
 
-	public int getAge() {
-		return age;
+	public String getDateActivated() {
+		return dateActivated;
 	}
 
-	public void setAge(int age) {
-		this.age = age;
+	public void setDateActivated(String dateActivated) {
+		this.dateActivated = dateActivated;
 	}
 
 	public Long getId() {
