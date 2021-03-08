@@ -32,6 +32,15 @@ public class MrMeeseeks {
 		this.purpose = purpose;
 		this.dateActivated = dateActivated;
 	}
+	
+	// constructor(2) for testing 
+	public MrMeeseeks(Long id, String name, String purpose, LocalDate dateActivated) {
+		super();
+		this.name = name;
+		this.purpose = purpose;
+		this.dateActivated = dateActivated;
+		this.id = id;
+	}
 
 	//getters and setters 
 	public String getName() {
