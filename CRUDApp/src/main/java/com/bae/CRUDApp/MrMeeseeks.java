@@ -1,6 +1,8 @@
 package com.bae.CRUDApp;
 
 
+import java.time.LocalDate;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,7 +13,7 @@ public class MrMeeseeks {
 	
 	private String name;
 	private String purpose;
-	private String dateActivated;
+	private LocalDate dateActivated;
 	
 	//set id as primary key (auto-incremented)
 	@Id 
@@ -24,7 +26,7 @@ public class MrMeeseeks {
 	}
 	
 	//constructor 
-	public MrMeeseeks(String name, String purpose, String dateActivated) {
+	public MrMeeseeks(String name, String purpose, LocalDate dateActivated) {
 		super();
 		this.name = name; 
 		this.purpose = purpose;
@@ -48,11 +50,11 @@ public class MrMeeseeks {
 		this.purpose = purpose;
 	}
 
-	public String getDateActivated() {
+	public LocalDate getDateActivated() {
 		return dateActivated;
 	}
 
-	public void setDateActivated(String dateActivated) {
+	public void setDateActivated(LocalDate dateActivated) {
 		this.dateActivated = dateActivated;
 	}
 
