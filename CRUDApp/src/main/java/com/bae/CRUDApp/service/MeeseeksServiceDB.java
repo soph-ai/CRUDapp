@@ -1,10 +1,13 @@
-package com.bae.CRUDApp;
+package com.bae.CRUDApp.service;
 
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
+
+import com.bae.CRUDApp.domain.Meeseeks;
+import com.bae.CRUDApp.repo.MeeseeksRepo;
 
 @Service 
 public class MeeseeksServiceDB implements MeeseeksServiceInterface {
@@ -18,24 +21,24 @@ public class MeeseeksServiceDB implements MeeseeksServiceInterface {
 	
 	//override the methods from the MeeseeksServiceInterface 
 	@Override
-	public MrMeeseeks createMeeseeks(MrMeeseeks meeseeks) {
+	public Meeseeks createMeeseeks(Meeseeks meeseeks) {
 		return this.repo.save(meeseeks);
 	}
 
 	@Override
-	public List<MrMeeseeks> getMeeseeks() {
+	public List<Meeseeks> getMeeseeks() {
 		return this.repo.findAll();
 	}
 
 	@Override
-	public MrMeeseeks getMeeseeksById(Long id) {
-		Optional<MrMeeseeks> optMeeseeks = this.repo.findById(id);
+	public Meeseeks getMeeseeksById(Long id) {
+		Optional<Meeseeks> optMeeseeks = this.repo.findById(id);
 		return optMeeseeks.orElse(null);
 	}
 	  
 	@Override
-	public MrMeeseeks updateMeeseeks(Long id, MrMeeseeks newMeeseeks) {
-		MrMeeseeks existing = this.getMeeseeksById(id);
+	public Meeseeks updateMeeseeks(Long id, Meeseeks newMeeseeks) {
+		Meeseeks existing = this.getMeeseeksById(id);
 
 		existing.setDateActivated(newMeeseeks.getDateActivated());
 		existing.setName(newMeeseeks.getName());
@@ -51,7 +54,7 @@ public class MeeseeksServiceDB implements MeeseeksServiceInterface {
 	}
 
 	@Override
-	public MrMeeseeks getMeeseeksByName(String name) {
+	public Meeseeks getMeeseeksByName(String name) {
 		return this.repo.findByName(name);
 	}
 }
