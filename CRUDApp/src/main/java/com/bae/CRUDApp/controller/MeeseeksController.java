@@ -1,5 +1,4 @@
-package com.bae.CRUDApp;
-
+package com.bae.CRUDApp.controller;
 
 import java.util.List;
 
@@ -13,6 +12,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.bae.CRUDApp.domain.Meeseeks;
+import com.bae.CRUDApp.service.MeeseeksServiceDB;
+
 @RestController
 public class MeeseeksController {
 	
@@ -24,27 +26,27 @@ public class MeeseeksController {
 	}
 	
 	@PostMapping("/createMeeseeks")
-	public ResponseEntity<MrMeeseeks> createMeeseeks(@RequestBody MrMeeseeks meeseeks) {
-		return new ResponseEntity <MrMeeseeks> (this.service.createMeeseeks(meeseeks), HttpStatus.CREATED);
+	public ResponseEntity<Meeseeks> createMeeseeks(@RequestBody Meeseeks meeseeks) {
+		return new ResponseEntity <Meeseeks> (this.service.createMeeseeks(meeseeks), HttpStatus.CREATED);
 	}
 
 	@GetMapping("/getMeeseeks")
-	public List<MrMeeseeks> getMeeseeks() {
-		return this.service.getMeeseeks();
+	public ResponseEntity<List<Meeseeks>> getMeeseeks() {
+		return ResponseEntity.ok(this.service.getMeeseeks());
 	}
 
 	@GetMapping("/getMeeseeks/{id}")
-	public MrMeeseeks getMeeseeksById(@PathVariable Long id) {
+	public Meeseeks getMeeseeksById(@PathVariable Long id) {
 		return this.service.getMeeseeksById(id);
 	}
 	
 	@GetMapping("/getMeeseeks/{name}")
-	public MrMeeseeks getMeeseeksByName(@PathVariable String name) {
+	public Meeseeks getMeeseeksByName(@PathVariable String name) {
 		return this.service.getMeeseeksByName(name);
 	}
 	
 	@PutMapping("/updateMeeseeks/{id}")
-	public MrMeeseeks updateMeeseeks(@PathVariable("id") Long id, @RequestBody MrMeeseeks meeseeks) {
+	public Meeseeks updateMeeseeks(@PathVariable("id") Long id, @RequestBody Meeseeks meeseeks) {
         return this.service.updateMeeseeks(id, meeseeks);
     }
 	

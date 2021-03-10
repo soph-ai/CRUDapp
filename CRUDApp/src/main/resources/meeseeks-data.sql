@@ -1,1 +1,1 @@
-INSERT INTO `meeseeks` (`name`, `purpose`, `dateActivated`) VALUES('Flash', 'fix my code', '07/03');
+INSERT INTO `meeseeks` (`name`, `purpose`, `date_activated`) VALUES('Flash', 'fix my code', '08/02/20');
