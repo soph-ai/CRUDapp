@@ -1,4 +1,4 @@
-package com.bae.crudapp;
+package com.bae.crudapp.tests;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

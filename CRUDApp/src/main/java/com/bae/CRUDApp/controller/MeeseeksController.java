@@ -35,12 +35,12 @@ public class MeeseeksController {
 		return ResponseEntity.ok(this.service.getMeeseeks());
 	}
 
-	@GetMapping("/getMeeseeks/{id}")
+	@GetMapping("/getMeeseeksById/{id}")
 	public Meeseeks getMeeseeksById(@PathVariable Long id) {
 		return this.service.getMeeseeksById(id);
 	}
 	
-	@GetMapping("/getMeeseeks/{name}")
+	@GetMapping("/getMeeseeksByName/{name}")
 	public Meeseeks getMeeseeksByName(@PathVariable String name) {
 		return this.service.getMeeseeksByName(name);
 	}
