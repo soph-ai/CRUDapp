@@ -1,4 +1,4 @@
-package com.bae.crudapp;
+package com.bae.crudapp.tests;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
