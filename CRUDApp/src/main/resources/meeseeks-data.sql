@@ -1,0 +1,1 @@
+INSERT INTO `meeseeks` (`name`, `purpose`, `date_activated`) VALUES('Flash', 'fix my code', '08/02/20');
