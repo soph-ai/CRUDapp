@@ -1,10 +1,12 @@
-package com.bae.CRUDApp;
+package com.bae.CRUDApp.repo;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface MeeseeksRepo extends JpaRepository <MrMeeseeks, Long> {
+import com.bae.CRUDApp.domain.Meeseeks;
+
+public interface MeeseeksRepo extends JpaRepository <Meeseeks, Long> {
 	
-	MrMeeseeks findByName(String name);
+	Meeseeks findByName(String name);
 
 }

@@ -1,20 +1,22 @@
-package com.bae.CRUDApp;
+package com.bae.CRUDApp.service;
 
 
 import java.util.List;
 
+import com.bae.CRUDApp.domain.Meeseeks;
+
 public interface MeeseeksServiceInterface {
 	
-	MrMeeseeks createMeeseeks(MrMeeseeks meeseeks);
+	Meeseeks createMeeseeks(Meeseeks meeseeks);
 
-	List<MrMeeseeks> getMeeseeks();
+	List<Meeseeks> getMeeseeks();
 
-	MrMeeseeks getMeeseeksById(Long id);
+	Meeseeks getMeeseeksById(Long id);
 	
-	MrMeeseeks getMeeseeksByName(String name);
+	Meeseeks getMeeseeksByName(String name);
 
 	boolean expireMeeseeks(Long id);
 	
-	MrMeeseeks updateMeeseeks(Long id, MrMeeseeks newMeeseek);
+	Meeseeks updateMeeseeks(Long id, Meeseeks newMeeseek);
 
 }
