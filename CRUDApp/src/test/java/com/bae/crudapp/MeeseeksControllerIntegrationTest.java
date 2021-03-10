@@ -58,9 +58,9 @@ public class MeeseeksControllerIntegrationTest {
 			
 		}
 		
-		//test for READ method 
+		//test for GET all method 
 		@Test 
-		void testRead() throws Exception {
+		void testGetAll() throws Exception {
 			Meeseeks testMeeseeks = new Meeseeks(1L, "Flash", "fix my code", "08/02/20");
 			
 			List<Meeseeks> allMeeseeks = new ArrayList<>();
@@ -69,6 +69,34 @@ public class MeeseeksControllerIntegrationTest {
 			String testMeeseeksAsJSON = this.mapper.writeValueAsString(allMeeseeks); 
 			
 			RequestBuilder mockRequest = get("/getMeeseeks");
+			ResultMatcher checkStatus = status().isOk();
+			ResultMatcher checkBody = content().json(testMeeseeksAsJSON);
+			
+			this.mockMVC.perform(mockRequest).andExpect(checkStatus).andExpect(checkBody);
+		}
+		
+		//test for GET by id method 
+		@Test 
+		void testGetById() throws Exception {
+			Meeseeks testMeeseeks = new Meeseeks(1L, "Flash", "fix my code", "08/02/20");
+			
+			String testMeeseeksAsJSON = this.mapper.writeValueAsString(testMeeseeks); 
+			
+			RequestBuilder mockRequest = get("/getMeeseeksById/1");
+			ResultMatcher checkStatus = status().isOk();
+			ResultMatcher checkBody = content().json(testMeeseeksAsJSON);
+			
+			this.mockMVC.perform(mockRequest).andExpect(checkStatus).andExpect(checkBody);
+		}
+		
+		//test for GET by name method 
+		@Test 
+		void testGetByName() throws Exception {
+			Meeseeks testMeeseeks = new Meeseeks(1L, "Flash", "fix my code", "08/02/20");
+			
+			String testMeeseeksAsJSON = this.mapper.writeValueAsString(testMeeseeks); 
+			
+			RequestBuilder mockRequest = get("/getMeeseeksByName/Flash");
 			ResultMatcher checkStatus = status().isOk();
 			ResultMatcher checkBody = content().json(testMeeseeksAsJSON);
 			
