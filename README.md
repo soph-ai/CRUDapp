@@ -66,7 +66,7 @@ Below is my service DB unit test using Mockito. This creates a mock repo which e
 ![image](https://user-images.githubusercontent.com/78798512/111065111-f507bb80-84af-11eb-8514-de80d5cf3fa3.png)
 
 ## Front-End 
-Below is a screenshot of my home page, from which you can navigate to the app page.  
+Below is a screenshot of my home page, from which you can navigate to the app page. I inlcuded a description of what a Mr Meeseeks is for people who have not watched Rick and Morty and therefore they should still be able to use and understand my app.  
 
 ![image](https://user-images.githubusercontent.com/78798512/111065523-22edff80-84b2-11eb-8452-37b6e10ba235.png)
 
