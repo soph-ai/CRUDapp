@@ -6,7 +6,7 @@ My first project was to build a CRUD app (Create, Read, Update and Delete). This
 1. Brief 
 2. My Approach 
 3. Kanban board 
-4. Data Stack 
+4. Tech Stack 
 5. Testing 
 6. Front-end 
 7. Future Improvements 
@@ -40,4 +40,23 @@ Although dedicated to the task initially assigned to him, Mr Meeseeks can be per
 
 This app allows for full CRUD functionality, allowing you to create Mr Meeseeks, update his task/purpose, delete him when expired and view all the tasks you have assigned to Mr Meeseeks'. *(Read).*
 
+## Kanban board 
+Below is a screenshot of my Kanban board. I used Jira software to create my Agile Kanban board. Production works from left to right, so when tasks are completed they are placed in the right "Done" column.  
+![image](https://user-images.githubusercontent.com/78798512/111064292-14501a00-84ab-11eb-86ec-ce232aac52c3.png)
+
+My Kanban board consists of one epic (use case), user stories and tasks.  
+An example of a user story is below.   
+![image](https://user-images.githubusercontent.com/78798512/111064495-326a4a00-84ac-11eb-83fb-f00dbfff2297.png)
+
+## Tech Stack 
+The tech stack for this project is below:  
+
+* Database: SQL Server (via a local H2 console) 
+* Programming language: Java (using the Spring Boot Framework) 
+* Front-end: HTML, CSS (design the website) and JavaScript (to interact with the DB) 
+* Unit Tests: JUnit and Mockito
+* Integration Tests: MockMVC and Selenium
+* Version Control System: Git (and GitHub) 
+
+## Testing 
 
