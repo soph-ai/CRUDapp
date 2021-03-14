@@ -30,7 +30,7 @@ This project will involve key concepts from the core training modules:
 * Automated Testing
 
 ## My Approach 
-After some deliberating, I decided to do my porject as an application version of a Mr Meeseeks Box from Rick and Morty. This is one of my favourite TV series so I was really excited to get started! 
+After some deliberating, I decided to do my project as an application version of a Mr Meeseeks Box from Rick and Morty. This is one of my favourite TV series so I was really excited to get started! 
 
 Mr Meeseeks' are creatures created to serve a singular purpose. Once they have served this purpose they expire/vanish. 
 
@@ -51,7 +51,7 @@ An example of a user story is below.
 ## Tech Stack 
 The tech stack for this project is below:  
 
-* Database: SQL Server (via a local H2 console) 
+* Database: SQL Server and a local H2 console (for testing)  
 * Programming language: Java (using the Spring Boot Framework) 
 * Front-end: HTML, CSS (design the website) and JavaScript (to interact with the DB) 
 * Unit Tests: JUnit and Mockito
