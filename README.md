@@ -59,4 +59,10 @@ The tech stack for this project is below:
 * Version Control System: Git (and GitHub) 
 
 ## Testing 
+Below is a screenshot of the controller integration test conducted using MockMVC. This is used to test the HTTP requests such as "/createMeeseeks" and tests the back-end of the app end-to-end.  
+![image](https://user-images.githubusercontent.com/78798512/111064932-de149980-84ae-11eb-8198-d201b1bb3059.png)
+
+Below is my service DB unit test using Mockito. This creates a mock repo which emulates how the real repo will work without also testing the repo. It allows us to skip over the DB interaction for testing purposes and test just a single "unit" of the program.  
+![image](https://user-images.githubusercontent.com/78798512/111065111-f507bb80-84af-11eb-8514-de80d5cf3fa3.png)
+
 
