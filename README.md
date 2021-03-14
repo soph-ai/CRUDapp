@@ -65,4 +65,31 @@ Below is a screenshot of the controller integration test conducted using MockMVC
 Below is my service DB unit test using Mockito. This creates a mock repo which emulates how the real repo will work without also testing the repo. It allows us to skip over the DB interaction for testing purposes and test just a single "unit" of the program.  
 ![image](https://user-images.githubusercontent.com/78798512/111065111-f507bb80-84af-11eb-8514-de80d5cf3fa3.png)
 
+## Front-End 
+Below is a screenshot of my home page, from which you can navigate to the app page.  
+
+![image](https://user-images.githubusercontent.com/78798512/111065523-22edff80-84b2-11eb-8452-37b6e10ba235.png)
+
+Here is the main screen for my app:  
+![image](https://user-images.githubusercontent.com/78798512/111065543-44e78200-84b2-11eb-81d7-c0535eb42673.png)  
+After activating some Meeseeks', they will appear at the bottom of the screen: 
+![image](https://user-images.githubusercontent.com/78798512/111065606-84ae6980-84b2-11eb-9e4a-826f400e759b.png)
+After clicking on the "edit" button, this screen (modal) appears, where a user can update the purpose (or name or date activated) of their activated Mr Meeseeks.  
+![image](https://user-images.githubusercontent.com/78798512/111065726-161ddb80-84b3-11eb-9158-de781511c428.png)
+
+
+## Future Improvements 
+I had a lot of ideas for this project to begin with and I quickly realised in the timeframe available, most of them would not be possible!  
+
+These ideas included: 
+
+* Having the activate Meeseeks button on top of the Meeseeks box image. (Although attempted, I haven't quite achieved it yet!) 
+* A button that when clicked says "Hi I'm Mr Meeseeks! Look at me!" Which is Mr Meeseeks' catchphrase. 
+* The longer Mr Meeseeks is alive, the more blotched and "degraded" he looks in appearance. I really wanted to try and incorporate this somehow, so the longer a task was left uncompleted, the more blotchy it appeared so that it was obvious to the user the tasks that had been there the longest. 
+* Add a second table to the DB- possibly for a second Mr Meeseeks box that would be for different types of tasks to the first one. 
+
+## Author and Acknowledgements 
+I would like to acknowledge the QA trainers, with special thanks to Jordan. 
+
+Project by Sophie Havell 
 
