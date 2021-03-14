@@ -14,7 +14,7 @@ My first project was to build a CRUD app (Create, Read, Update and Delete). This
 
 ## Resources 
 My [Kanban board](https://my-crud-jira-board.atlassian.net/secure/RapidBoard.jspa?rapidView=1&projectKey=APP&atlOrigin=eyJpIjoiMGY4M2VhOWJhYjY1NDEyOGJlNjQ5ZjA3ZjRjN2Y0MTYiLCJwIjoiaiJ9)  
-My [Presentation]()  
+My [Presentation](https://docs.google.com/presentation/d/1XlOyeqpEbgSxUrcK8uik5MADct4HSA3E3bxBu4NHFJY/edit#slide=id.gcb9a0b074_1_103)  
 My [Front-End Git Repo](https://github.com/soph-ai/CRUDAppFE.git)  
 
 ## Brief 
@@ -76,6 +76,11 @@ After activating some Meeseeks', they will appear at the bottom of the screen:
 ![image](https://user-images.githubusercontent.com/78798512/111065606-84ae6980-84b2-11eb-9e4a-826f400e759b.png)
 After clicking on the "edit" button, this screen (modal) appears, where a user can update the purpose (or name or date activated) of their activated Mr Meeseeks.  
 ![image](https://user-images.githubusercontent.com/78798512/111065726-161ddb80-84b3-11eb-9158-de781511c428.png)
+
+## Automated Testing 
+Below is a screenshot of the two tests I managed to complete. This was a HUGE struggle as my server was being extremely difficult but with mine and Jordan's perserverance we managed to find a way round it using the thread.sleep method instead!  
+![image](https://user-images.githubusercontent.com/78798512/111073917-9efb3e00-84d8-11eb-8c1a-9c8ae76776c3.png)
+
 
 
 ## Future Improvements 
