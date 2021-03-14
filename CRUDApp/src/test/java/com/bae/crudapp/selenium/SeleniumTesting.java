@@ -71,6 +71,46 @@ public class SeleniumTesting {
         assertThat(createdMeeseek.getText()).isEqualTo("Barry");
     }
 
+    @Test 
+	void editMeeseeks() throws InterruptedException {
+        this.driver.get("http://localhost:" + port);
+        // navigate to app page        
+        WebElement appButton = this.driver.findElement(By.id("homeRef"));
+        appButton.click();
+        
+        //edit meeseeks 
+        WebElement edit = explicitWait.until(
+                ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"output\"]/div[1]/div/div[2]/button[2]")));
+        driver.executeScript("arguments[0].scrollIntoView(true);",
+                this.driver.findElementByXPath("/html/body/main/main/div[4]/a"));
+        Thread.sleep(2000L);
+        edit.click();
+        //Thread.sleep(2000L);
+        
+        Thread.sleep(5000L);
+        WebElement meeseeksNameField = this.explicitWait                
+        		.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#meeseeksUpdate")));
+        ExpectedConditions.elementToBeSelected(By.cssSelector("#meeseeksUpdate"));
+        meeseeksNameField.click();
+        
+        Thread.sleep(5000L);
+        WebElement meeseeksName = this.explicitWait                
+        		.until(ExpectedConditions.presenceOfElementLocated(By.id("meeseeksName")));
+        ExpectedConditions.elementToBeSelected(By.id("meeseeksName"));
+        meeseeksName.sendKeys("Paul");
+        WebElement meeseeksPurpose = this.driver.findElement(By.id("meeseeksPurpose"));
+        meeseeksPurpose.sendKeys("Sel");
+        WebElement dateActivated = this.driver.findElement(By.id("meeseeksDateActivated"));
+        dateActivated.sendKeys("14/03/2021");
+        WebElement updateButton = this.driver.findElement(By.id("update"));
+        updateButton.click();
+        WebElement editedMeeseek = explicitWait.until(
+                ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"output\"]/div[2]/div/div[1]/h5")));
+        this.explicitWait.until(ExpectedConditions.textToBePresentInElement(editedMeeseek, "Paul"));
+        assertThat(editedMeeseek.getText()).isEqualTo("Paul"); 
+    }
+    
+    
     @Test    
     	void expireMeeseeks() throws InterruptedException {
         this.driver.get("http://localhost:" + port);
@@ -78,9 +118,7 @@ public class SeleniumTesting {
         WebElement appButton = this.driver.findElement(By.id("homeRef"));
         appButton.click();
         
-        // test to see if modal is not visible (blocking other things)        
-//        WebElement modal = this.driver.findElement(By.id("myModal"));
-//        new WebDriverWait(driver, 5).until(ExpectedConditions.invisibilityOf(modal));
+        // expire test         
         WebElement expire = explicitWait.until(
                 ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"output\"]/div[1]/div/div[2]/button[1]")));
         driver.executeScript("arguments[0].scrollIntoView(true);",
