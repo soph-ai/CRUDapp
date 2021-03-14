@@ -1,9 +1,43 @@
 # First Project: CRUD app- Mr Meeseeks Box 
 
+My first project was to build a CRUD app (Create, Read, Update and Delete). This incorporated many different technologies and methodologies we have learnt, including full data stack development, interaction with a database via H2 console and a fully functioning front-end built using HTML, CSS and JavaScript. 
+
+## Contents 
+1. Brief 
+2. My Approach 
+3. Kanban board 
+4. Data Stack 
+5. Testing 
+6. Front-end 
+7. Future Improvements 
+8. Author and Acknowledgements 
+
+## Resources 
+My [Kanban board](https://my-crud-jira-board.atlassian.net/secure/RapidBoard.jspa?rapidView=1&projectKey=APP&atlOrigin=eyJpIjoiMGY4M2VhOWJhYjY1NDEyOGJlNjQ5ZjA3ZjRjN2Y0MTYiLCJwIjoiaiJ9)  
+My [Presentation]()  
+My [Front-End Git Repo](https://github.com/soph-ai/CRUDAppFE.git)  
+
+## Brief 
+The aim of this project is to create a CRUD application.  
+  
+This project will involve key concepts from the core training modules:
+
+* Project Management
+* Databases
+* Java SE
+* Spring Boot
+* Front-End Development
+* Automated Testing
+
+## My Approach 
+After some deliberating, I decided to do my porject as an application version of a Mr Meeseeks Box from Rick and Morty. This is one of my favourite TV series so I was really excited to get started! 
+
 Mr Meeseeks' are creatures created to serve a singular purpose. Once they have served this purpose they expire/vanish. 
 
-You can summon a Mr Meeseeks by activating a Mr Meeseeks box. This allows you to name him and assign him a task you want him to complete, recording also the date that the task was assigned. Mark the task as completed once Mr Meeseeks has fulfilled his purpose and he will then disappear/expire. 
+My app will allow the user to summon a Mr Meeseeks by activating a Mr Meeseeks box. *(Create).* This allows you to name him and assign him a task you want him to complete, recording also the date that the task was assigned. Mark the task as completed once Mr Meeseeks has fulfilled his purpose and he will then disappear/expire. (*Delete*).  
 
-Although dedicated to the task initially assigned to him, Mr Meeseeks can be persuaded to shift his purpose- you can then ask him to complete a different task of your choosing. 
+Although dedicated to the task initially assigned to him, Mr Meeseeks can be persuaded to shift his purpose- you can then ask him to complete a different task of your choosing. *(Update).* 
 
-This app allows for full CRUD functionality, allowing you to create Mr Meeseeks, update his task/purpose, delete him when expired and view all the tasks you have assigned to Mr Meeseeks'. 
+This app allows for full CRUD functionality, allowing you to create Mr Meeseeks, update his task/purpose, delete him when expired and view all the tasks you have assigned to Mr Meeseeks'. *(Read).*
+
+
